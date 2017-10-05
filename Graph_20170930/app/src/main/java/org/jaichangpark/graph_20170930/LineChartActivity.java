@@ -88,6 +88,8 @@ public class LineChartActivity extends AppCompatActivity implements OnChartValue
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_line_chart);
 
+        setTitle("Single Line Chart");   // activity 상단의 앱 이름을 변경한다 .
+
         mBtnBefore = (Button) findViewById(R.id.btnBefore);
         mBtnNext = (Button) findViewById(R.id.btnNext);
 

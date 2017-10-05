@@ -29,6 +29,8 @@ public class BarChartActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bar_chart);
 
+        setTitle("Bar Chart");   // activity 상단의 앱 이름을 변경한다 .
+
         mBtnBefore = (Button) findViewById(R.id.btnBefore);
         mBtnNext = (Button) findViewById(R.id.btnNext);
 

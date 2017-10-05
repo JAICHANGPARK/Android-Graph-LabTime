@@ -1,10 +1,12 @@
 package org.jaichangpark.graph_20170930;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 
@@ -42,6 +44,22 @@ public class LinearLineChartActivity extends AppCompatActivity {
             setupChart(mLineChart[i], data, mColors[i]);
 
         }
+
+        mBtnNext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LinearLineChartActivity.this, MultiLine_Activity.class);
+                startActivity(intent);
+            }
+        });
+
+        mBtnBefore.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LinearLineChartActivity.this, BarChartActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 
